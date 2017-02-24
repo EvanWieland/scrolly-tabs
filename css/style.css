@@ -1,0 +1,73 @@
+body {
+  background: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-style: normal;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+main {
+  padding: 25px 0;
+  height: 640px;
+  width: 360px;
+  background: -webkit-linear-gradient(top, #2D2D37, #1B1B21);
+  background: linear-gradient(to bottom, #2D2D37, #1B1B21);
+  border-radius: 15px;
+}
+
+#scrollyTabs {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  overflow-x: scroll;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+#scrollyTabs::-webkit-scrollbar {
+  display: none;
+}
+#scrollyTabs ul {
+  text-align: justify;
+  list-style-type: none;
+  padding: 0;
+}
+#scrollyTabs ul:before {
+  content: "";
+  display: inline-block;
+  width: 42%;
+}
+#scrollyTabs ul:after {
+  content: "";
+  display: inline-block;
+  width: 37%;
+}
+#scrollyTabs ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right: 2px;
+  padding: 12px 7.5px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  cursor: pointer;
+}
+#scrollyTabs ul li.active {
+  color: #FFFFFF;
+  text-align: center;
+}
+#scrollyTabs ul li i {
+  font-size: 17px;
+  padding-right: 3px;
+}
